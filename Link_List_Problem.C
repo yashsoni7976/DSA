@@ -1,3 +1,6 @@
+//WAP to Implement Link list with following operation
+// 1. Delete specific Item
+// 2. Insert Element in Ascending Order
 #include<stdio.h>
 #include<conio.h>
 
