@@ -2,7 +2,7 @@
 #include<conio.h>
 #define MAX 20
 /*
-	Linear Seacrch Algorithm for Unordered Array
+	Binary Search Algorithm for Ordered Array
 */
 int BS(int A[], int n, int item)
 {
