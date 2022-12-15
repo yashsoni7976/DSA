@@ -24,10 +24,11 @@ int LS_Order(int A[], int n, int item)
 	int i;
 	for(i=0;i<n;i++)
 	{
-		if(item == A[i] && item >= A[i])
+		if(item == A[i])
 			return i;
+		else if(item < A[i])
+			return -1;
 	}
-	return -1;
 }
 
 void main()
@@ -49,11 +50,11 @@ void main()
 	{       clrscr();
 		printf("\nUnordered Array : ");
 		for(i=0;i<n;i++)
-			printf("%d",arr[i]);
+			printf("%d ",arr[i]);
 
 		printf("\nOrdered Array : ");
-		for(i=1;i<=n;i++)
-			printf("%d",arr1[i]);
+		for(i=0;i<n;i++)
+			printf("%d ",arr1[i]);
 		printf("\nChoose Option:-\n 1.Un-Ordered Pair\n 2.Ordered Pair\nEnter Option : ");
 		scanf("%d",&cho);
 		switch(cho)
@@ -72,5 +73,6 @@ void main()
 			printf("\n404 NOT FOUND");
 		else
 			printf("Position is %d",pos+1);
+		getch();
 	}while(cho!=9);
 }
