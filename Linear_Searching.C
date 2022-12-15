@@ -9,7 +9,7 @@ int LS_Unorder(int A[], int n, int item)
 	int i;
 	for(i=0;i<n;i++)
 	{
-		if(item < A[i])
+		if(item == A[i])
 		{
 			return i;
 		}
@@ -24,7 +24,7 @@ int LS_Order(int A[], int n, int item)
 	int i;
 	for(i=0;i<n;i++)
 	{
-		if(item == A[i] && item <= A[i])
+		if(item == A[i] && item >= A[i])
 			return i;
 	}
 	return -1;
