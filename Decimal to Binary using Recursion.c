@@ -1,19 +1,19 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 
 int deci2binary(int x)
 {
+    int temp;
     if(x==0)
         return 0;
-    int temp=x%2;
+    temp=x%2;
     deci2binary(x / 2);
-    cout<<temp;
+    printf("%d",temp);
 }
 
 int main()
 {
     int i;
-    cin>>i;
+    scanf("%d",&i);
     deci2binary(i);
     return 0;
 }
