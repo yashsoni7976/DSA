@@ -38,7 +38,7 @@ int knapsack(int pro[],int wt[], int n, int W){
             }
         }
     }
-    return k[i][w];
+    return k[n][W];
 }
 
 int main(){
