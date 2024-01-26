@@ -1,0 +1,2 @@
+
+    insertAtHead(head, 20);

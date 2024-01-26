@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "Bubble_Sorting.C": "cpp",
+        "STACKFOR.C": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "new": "cpp"
+    }
+}
